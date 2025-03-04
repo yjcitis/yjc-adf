@@ -1,0 +1,29 @@
+{
+	"name": "2350_end_of_each_month",
+	"properties": {
+		"description": "每個月底晚上11:50執行",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Month",
+				"interval": 1,
+				"startTime": "2022-09-27T08:40:00Z",
+				"timeZone": "UTC",
+				"schedule": {
+					"minutes": [
+						50
+					],
+					"hours": [
+						23
+					],
+					"monthDays": [
+						-1
+					]
+				}
+			}
+		}
+	}
+}
