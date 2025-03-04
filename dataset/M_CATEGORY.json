@@ -1,0 +1,29 @@
+{
+	"name": "M_CATEGORY",
+	"properties": {
+		"description": "財務比率使用說明中",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "m_category_id",
+				"type": "nchar"
+			},
+			{
+				"name": "m_category_name",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "m_category"
+		}
+	}
+}

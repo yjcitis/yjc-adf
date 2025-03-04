@@ -1,0 +1,67 @@
+{
+	"name": "ProcessingMaterialProcessConfig_PCF",
+	"properties": {
+		"description": "加工廠品項工序設定 ",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PMID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProcessItemNo",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Process",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ConvertRate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LoaderQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Value",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ProcessingMaterialProcessConfig"
+		}
+	}
+}

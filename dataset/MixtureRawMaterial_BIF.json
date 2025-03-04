@@ -1,0 +1,84 @@
+{
+	"name": "MixtureRawMaterial_BIF",
+	"properties": {
+		"description": "配料室原料上報紀錄",
+		"linkedServiceName": {
+			"referenceName": "MES_BIF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/配料室"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "RID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "WorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Barcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LotID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialUnit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "ManufactureDate",
+				"type": "date"
+			},
+			{
+				"name": "ExpirationDate",
+				"type": "date"
+			},
+			{
+				"name": "Editor",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PublishDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MixtureRawMaterial"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "MixtureProduction",
+	"properties": {
+		"description": "配料室產品生產上報紀錄",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/MES/配料室"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mes",
+			"table": "MixtureProduction"
+		}
+	}
+}

@@ -1,0 +1,213 @@
+{
+	"name": "PDALA",
+	"properties": {
+		"description": "庫存狀況檔",
+		"linkedServiceName": {
+			"referenceName": "ERP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ERP"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "COMPANY",
+				"type": "char"
+			},
+			{
+				"name": "CREATOR",
+				"type": "char"
+			},
+			{
+				"name": "USR_GROUP",
+				"type": "char"
+			},
+			{
+				"name": "CREATE_DATE",
+				"type": "char"
+			},
+			{
+				"name": "MODIFIER",
+				"type": "char"
+			},
+			{
+				"name": "MODI_DATE",
+				"type": "char"
+			},
+			{
+				"name": "FLAG",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "CREATE_TIME",
+				"type": "char"
+			},
+			{
+				"name": "MODI_TIME",
+				"type": "char"
+			},
+			{
+				"name": "TRANS_TYPE",
+				"type": "char"
+			},
+			{
+				"name": "TRANS_NAME",
+				"type": "char"
+			},
+			{
+				"name": "sync_date",
+				"type": "char"
+			},
+			{
+				"name": "sync_time",
+				"type": "char"
+			},
+			{
+				"name": "sync_mark",
+				"type": "char"
+			},
+			{
+				"name": "sync_count",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "DataUser",
+				"type": "char"
+			},
+			{
+				"name": "DataGroup",
+				"type": "char"
+			},
+			{
+				"name": "LA001",
+				"type": "char"
+			},
+			{
+				"name": "LA002",
+				"type": "char"
+			},
+			{
+				"name": "LA003",
+				"type": "char"
+			},
+			{
+				"name": "LA004",
+				"type": "char"
+			},
+			{
+				"name": "LA005",
+				"type": "char"
+			},
+			{
+				"name": "LA006",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA007",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LA008",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA009",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA010",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA011",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA012",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA013",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA014",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA015",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA016",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA017",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA018",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA019",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA020",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA021",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "LA022",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PDALA"
+		}
+	}
+}

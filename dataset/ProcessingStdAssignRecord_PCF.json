@@ -1,0 +1,83 @@
+{
+	"name": "ProcessingStdAssignRecord_PCF",
+	"properties": {
+		"description": "加工廠標準品指定用料 ",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ERPWorkorderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "StockID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "StockName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Specification",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LotID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PackageQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "PackageUnit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsConvertRelationShip",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ProcessingStdAssignRecord"
+		}
+	}
+}

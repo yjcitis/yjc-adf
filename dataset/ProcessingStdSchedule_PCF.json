@@ -1,0 +1,84 @@
+{
+	"name": "ProcessingStdSchedule_PCF",
+	"properties": {
+		"description": "加工廠標準品排定表 ",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PsID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "ExpectedStartDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sequence",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExpectedEndDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Plant",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CreateDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExpectedQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "StockID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ProcessingStdSchedule"
+		}
+	}
+}

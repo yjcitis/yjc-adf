@@ -1,0 +1,283 @@
+{
+	"name": "MOCTC",
+	"properties": {
+		"description": "領/退料單頭檔",
+		"linkedServiceName": {
+			"referenceName": "ERP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ERP"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "COMPANY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATOR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USR_GROUP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATE_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODI_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FLAG",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "CREATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODI_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TRANS_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TRANS_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_mark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_count",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "DataUser",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DataGroup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC001",
+				"type": "nchar"
+			},
+			{
+				"name": "TC002",
+				"type": "nchar"
+			},
+			{
+				"name": "TC003",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC004",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC005",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC006",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC007",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC008",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC009",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC010",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "TC011",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC012",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC013",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC014",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC015",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC016",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC017",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC018",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "TC019",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC020",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC021",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC022",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "TC023",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "TC024",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC025",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC026",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC027",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC028",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "TC029",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC030",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC031",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TC032",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF01",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF03",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF04",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF05",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF06",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF07",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF08",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF09",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF10",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MOCTC"
+		}
+	}
+}

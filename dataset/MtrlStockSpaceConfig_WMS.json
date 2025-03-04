@@ -1,0 +1,105 @@
+{
+	"name": "MtrlStockSpaceConfig_WMS",
+	"properties": {
+		"description": "品號在各倉別儲位設定",
+		"linkedServiceName": {
+			"referenceName": "WMS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "WMS"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pk_mtrl_id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "pk_stock_id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "pk_space_id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "sort",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "is_use",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_index",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "mtrl_id",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MtrlStockSpaceConfig"
+		}
+	}
+}

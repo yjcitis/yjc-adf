@@ -1,0 +1,20 @@
+{
+	"name": "ProcessingStdWorkorderAbnormal",
+	"properties": {
+		"description": "加工廠標準品不良紀錄 ",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/MES/加工廠"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mes",
+			"table": "ProcessingStdWorkorderAbnormal"
+		}
+	}
+}

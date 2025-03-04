@@ -1,0 +1,38 @@
+{
+	"name": "PROFIT_AND_LOSS_BUDGE_5900",
+	"properties": {
+		"description": "PROFIT_AND_LOSS_BUDGE",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "month",
+				"type": "nchar"
+			},
+			{
+				"name": "account_id",
+				"type": "varchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "V_profit_and_loss_budget_5900"
+		}
+	}
+}

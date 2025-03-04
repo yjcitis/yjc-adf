@@ -1,0 +1,181 @@
+{
+	"name": "Process_PMR",
+	"properties": {
+		"description": "製程",
+		"linkedServiceName": {
+			"referenceName": "PMR",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "PMR"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "order_type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_seq",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "done_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "undone_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CSD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_abb",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "priority",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "is_picking",
+				"type": "nvarchar"
+			},
+			{
+				"name": "real_inventory_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "plan_inventory_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "plan_inventory_undone_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "wo_qty",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "wo_done_qty",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "erp_status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "check_code",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Process"
+		}
+	}
+}

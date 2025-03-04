@@ -1,0 +1,85 @@
+{
+	"name": "ProcessingJointReturnRawMaterial_PCF",
+	"properties": {
+		"description": "加工廠連產品原料退料上報紀錄 ",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "RID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "ERPWorkorderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProcessItemNo",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Barcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LotID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialUnit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ReturnQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Editor",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PublishDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ProcessingJointReturnRawMaterial"
+		}
+	}
+}

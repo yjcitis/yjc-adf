@@ -1,0 +1,64 @@
+{
+	"name": "MixtureWorkorderStatus_BIF",
+	"properties": {
+		"description": "配料室開工紀錄",
+		"linkedServiceName": {
+			"referenceName": "MES_BIF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/配料室"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "WID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "WorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ActualStartTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ActualEndTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Machine",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MixtureWorkorderStatus"
+		}
+	}
+}

@@ -1,0 +1,179 @@
+{
+	"name": "Mtrl_PMR",
+	"properties": {
+		"description": "料號設定",
+		"linkedServiceName": {
+			"referenceName": "PMR",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "PMR"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "inventory_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "spec",
+				"type": "nvarchar"
+			},
+			{
+				"name": "inventory_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "inventory_mgt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "valid_day",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "prop",
+				"type": "nvarchar"
+			},
+			{
+				"name": "exp_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "overcharge",
+				"type": "nvarchar"
+			},
+			{
+				"name": "overcharge_rate",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "package_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "fixed_weight",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acpt_day",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "week_prev_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "week_4_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "inventory_day",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "warning_day",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "safety_stock",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "warning_safety_stock",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "po_cycle",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "MOQ",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Mtrl"
+		}
+	}
+}

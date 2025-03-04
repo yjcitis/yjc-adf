@@ -1,0 +1,159 @@
+{
+	"name": "MtrlConfig_WMS",
+	"properties": {
+		"description": "料號設定",
+		"linkedServiceName": {
+			"referenceName": "WMS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "WMS"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "is_hide",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "carrier_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "in_box_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "storage_conditions",
+				"type": "nvarchar"
+			},
+			{
+				"name": "exp_days",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "fail_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "acpt_days",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "stock_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_7",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_8",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_9",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stock_10",
+				"type": "nvarchar"
+			},
+			{
+				"name": "spec",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MtrlConfig"
+		}
+	}
+}

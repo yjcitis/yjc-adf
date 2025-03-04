@@ -1,0 +1,20 @@
+{
+	"name": "ProcessingJointMaterialConfig",
+	"properties": {
+		"description": "加工廠連產品設定 ",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/MES/加工廠"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mes",
+			"table": "ProcessingJointMaterialConfig"
+		}
+	}
+}

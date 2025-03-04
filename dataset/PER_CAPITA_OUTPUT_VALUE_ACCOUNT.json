@@ -1,0 +1,25 @@
+{
+	"name": "PER_CAPITA_OUTPUT_VALUE_ACCOUNT",
+	"properties": {
+		"description": "per_capita_output_value_account",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "nchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "per_capita_output_value_account"
+		}
+	}
+}

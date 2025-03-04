@@ -1,0 +1,80 @@
+{
+	"name": "MixtureSchedule_BIF",
+	"properties": {
+		"description": "配料室排定表",
+		"linkedServiceName": {
+			"referenceName": "MES_BIF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/配料室"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "MsID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CreateDate",
+				"type": "date"
+			},
+			{
+				"name": "ExpectedStartDate",
+				"type": "varchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "ExpectedQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Unit",
+				"type": "varchar"
+			},
+			{
+				"name": "Department",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MixtureSchedule"
+		}
+	}
+}

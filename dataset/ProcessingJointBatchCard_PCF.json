@@ -1,0 +1,123 @@
+{
+	"name": "ProcessingJointBatchCard_PCF",
+	"properties": {
+		"description": "加工廠連產品標籤 ",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Barcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProductionNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProductionName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProcessItemNo",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Process",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CartonComment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ManufactureDate",
+				"type": "date"
+			},
+			{
+				"name": "ExpirationDate",
+				"type": "date"
+			},
+			{
+				"name": "LotID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CartonNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Storage",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Comment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MeatOrigin",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialQtyType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ProcessingJointBatchCard"
+		}
+	}
+}

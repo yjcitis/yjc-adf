@@ -1,0 +1,113 @@
+{
+	"name": "MtrlRelated_PMR",
+	"properties": {
+		"description": "產品關聯",
+		"linkedServiceName": {
+			"referenceName": "PMR",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "PMR"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "is_hide",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "spec",
+				"type": "nvarchar"
+			},
+			{
+				"name": "key_1_mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "key_1_mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "key_2_mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "key_2_mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "key_3_mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "key_3_mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "safety_stock",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MtrlRelated"
+		}
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"name": "ProcessConfig_PCF",
+	"properties": {
+		"description": "工序設定表 ",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Station",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Process",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Available",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ProcessConfig"
+		}
+	}
+}

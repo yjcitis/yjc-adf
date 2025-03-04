@@ -1,0 +1,46 @@
+{
+	"name": "MachineConfig_CEF",
+	"properties": {
+		"description": "機台設定",
+		"linkedServiceName": {
+			"referenceName": "MES_CEF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/雞精廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "MID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Version",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Station",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Machine",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MachineConfig"
+		}
+	}
+}
