@@ -1,0 +1,162 @@
+{
+	"name": "pip_erp_dn_return_local",
+	"properties": {
+		"description": "退貨單",
+		"activities": [
+			{
+				"name": "CopyPURTJ",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopyPURTI",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"sqlReaderQuery": {
+							"value": "@concat('select * from PURTJ where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"preCopyScript": "@concat('delete from erp.PURTJ where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))",
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TJ001",
+								"TJ002",
+								"TJ003",
+								"TJ004"
+							]
+						},
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "PURTJ",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DW_ERP_PURTJ",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "CopyPURTI",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"sqlReaderQuery": {
+							"value": "@concat('select * from PURTI where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"preCopyScript": {
+							"value": "@{concat('delete from erp.PURTI where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))}",
+							"type": "Expression"
+						},
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TI001",
+								"TI002"
+							]
+						},
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "PURTI",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DW_ERP_PURTI",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "PIP_ODS/ERP/HISTORY"
+		},
+		"annotations": []
+	}
+}

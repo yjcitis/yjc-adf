@@ -1,0 +1,345 @@
+{
+	"name": "pip_erp_pick_return_reload",
+	"properties": {
+		"description": "ERP 領/退料單",
+		"activities": [
+			{
+				"name": "CopyMOCTC",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": {
+							"value": "@{concat('delete from erp.MOCTC ')}",
+							"type": "Expression"
+						},
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TC001",
+								"TC002"
+							]
+						},
+						"sqlWriterUseTableLock": true,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "MOCTC",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ERP_MOCTC",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Trim",
+				"type": "Script",
+				"dependsOn": [
+					{
+						"activity": "CopyMOCTC",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "CloudDW",
+					"type": "LinkedServiceReference"
+				},
+				"typeProperties": {
+					"scripts": [
+						{
+							"type": "NonQuery",
+							"text": {
+								"value": "@concat('update erp.MOCTC set TC001 = trim(TC001),TC002 = trim(TC002) ',' where convert(varchar, ETL_DATE, 112) >= convert(varchar, getdate()-1, 112)')",
+								"type": "Expression"
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "CopyMOCTD",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopyMOCTC",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"sqlReaderQuery": {
+							"value": "@concat('select * from MOCTD ')",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": {
+							"value": "@{concat('delete from erp.MOCTD where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))}",
+							"type": "Expression"
+						},
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TD001",
+								"TD002",
+								"TD003",
+								"TD004"
+							]
+						},
+						"sqlWriterUseTableLock": true,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "MOCTD",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ERP_MOCTD",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Trim2",
+				"type": "Script",
+				"dependsOn": [
+					{
+						"activity": "CopyMOCTD",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "CloudDW",
+					"type": "LinkedServiceReference"
+				},
+				"typeProperties": {
+					"scripts": [
+						{
+							"type": "NonQuery",
+							"text": {
+								"value": "@concat('update erp.MOCTD set TD001 = trim(TD001),TD002 = trim(TD002),TD003 = trim(TD003),TD004 = trim(TD004) ',' where convert(varchar, ETL_DATE, 112) >= convert(varchar, getdate()-1, 112)')",
+								"type": "Expression"
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "CopyMOCTE",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopyMOCTD",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": {
+							"value": "@{concat('delete from erp.MOCTE ')}",
+							"type": "Expression"
+						},
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TE001",
+								"TE002",
+								"TE003"
+							]
+						},
+						"sqlWriterUseTableLock": true,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "MOCTE",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ERP_MOCTE",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Trim3",
+				"type": "Script",
+				"dependsOn": [
+					{
+						"activity": "CopyMOCTE",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "CloudDW",
+					"type": "LinkedServiceReference"
+				},
+				"typeProperties": {
+					"scripts": [
+						{
+							"type": "NonQuery",
+							"text": {
+								"value": "@concat('update erp.MOCTE set TE001 = trim(TE001),TE002 = trim(TE002),TE003 = trim(TE003) ',' where convert(varchar, ETL_DATE, 112) >= convert(varchar, getdate()-1, 112)')",
+								"type": "Expression"
+							}
+						}
+					]
+				}
+			}
+		],
+		"folder": {
+			"name": "PIP_ODS/ERP/HISTORY"
+		},
+		"annotations": []
+	}
+}

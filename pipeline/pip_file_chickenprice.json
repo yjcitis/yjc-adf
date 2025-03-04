@@ -1,0 +1,131 @@
+{
+	"name": "pip_file_chickenprice",
+	"properties": {
+		"activities": [
+			{
+				"name": "CheckIsExists",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "ChickenPriceExcel",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"exists"
+					],
+					"storeSettings": {
+						"type": "AzureFileStorageReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
+				}
+			},
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [
+					{
+						"activity": "CheckIsExists",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "eee",
+						"type": "Expression"
+					},
+					"ifTrueActivities": [
+						{
+							"name": "CopyChickenPrice",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"source": {
+									"type": "AzureSqlSource",
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
+								},
+								"sink": {
+									"type": "AzureSqlSink",
+									"writeBehavior": "insert",
+									"sqlWriterUseTableLock": false
+								},
+								"enableStaging": false
+							},
+							"inputs": [
+								{
+									"referenceName": "AbnormalConfig",
+									"type": "DatasetReference"
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "AbnormalConfig",
+									"type": "DatasetReference"
+								}
+							]
+						},
+						{
+							"name": "MoveFile",
+							"type": "ExecuteDataFlow",
+							"dependsOn": [
+								{
+									"activity": "CopyChickenPrice",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataflow": {
+									"referenceName": "DF_STG_INVME",
+									"type": "DataFlowReference"
+								},
+								"compute": {
+									"coreCount": 8,
+									"computeType": "General"
+								},
+								"traceLevel": "Fine",
+								"continuationSettings": {
+									"customizedCheckpointKey": "d227ceb4-3e2e-4ce7-98b9-d9316d20d8ef"
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"folder": {
+			"name": "PIP_FILE"
+		},
+		"annotations": []
+	}
+}

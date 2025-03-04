@@ -1,0 +1,158 @@
+{
+	"name": "pip_erp_purchase_local",
+	"properties": {
+		"description": "ERP 採購單",
+		"activities": [
+			{
+				"name": "CopyPURTC",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"sqlReaderQuery": {
+							"value": "@concat('select * from PURTC where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TC001",
+								"TC002"
+							]
+						},
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "PURTC",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DW_ERP_PURTC",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "CopyPURTD",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopyPURTC",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"sqlReaderQuery": {
+							"value": "@concat('select * from PURTD where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TD001",
+								"TD002",
+								"TD003",
+								"TD004",
+								"TD005"
+							]
+						},
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "PURTD",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DW_ERP_PURTD",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "PIP_ODS/ERP/HISTORY"
+		},
+		"annotations": []
+	}
+}

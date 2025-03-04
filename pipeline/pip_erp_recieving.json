@@ -1,0 +1,166 @@
+{
+	"name": "pip_erp_recieving",
+	"properties": {
+		"description": "ERP收款單",
+		"activities": [
+			{
+				"name": "CopyACRTD",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopyACRTC",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"sqlReaderQuery": {
+							"value": "@concat('select * from ACRTD where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": {
+							"value": "@concat('delete from erp.ACRTD where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))",
+							"type": "Expression"
+						},
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TD001",
+								"TD002",
+								"TD003"
+							]
+						},
+						"sqlWriterUseTableLock": true,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ACRTD",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ERP_ACRTD",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "CopyACRTC",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"additionalColumns": [
+							{
+								"name": "ETL_DATE",
+								"value": {
+									"value": "@addhours(utcnow(),8)",
+									"type": "Expression"
+								}
+							}
+						],
+						"sqlReaderQuery": {
+							"value": "@concat('select * from ACRTC where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": {
+							"value": "@{concat('delete from erp.ACRTC where YEAR(COALESCE(NULLIF(MODI_DATE, ''''), CREATE_DATE)) >= '  , formatDateTime(addDays(addhours(utcnow(),8),-1),'yyyy'))}",
+							"type": "Expression"
+						},
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"COMPANY",
+								"TC001",
+								"TC002"
+							]
+						},
+						"sqlWriterUseTableLock": true,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ACRTC",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ERP_ACRTC",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "PIP_ODS/ERP/HISTORY"
+		},
+		"annotations": []
+	}
+}
