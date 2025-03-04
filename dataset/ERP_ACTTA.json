@@ -1,0 +1,20 @@
+{
+	"name": "ERP_ACTTA",
+	"properties": {
+		"description": "會計傳票單頭檔\n",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "ACTTA"
+		}
+	}
+}

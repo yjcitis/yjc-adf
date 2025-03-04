@@ -1,0 +1,19 @@
+{
+	"name": "DW_V_SO_WITH_COST",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "V_SO_WITH_COST"
+		}
+	}
+}

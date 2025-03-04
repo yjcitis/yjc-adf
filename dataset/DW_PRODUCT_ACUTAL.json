@@ -1,0 +1,37 @@
+{
+	"name": "DW_PRODUCT_ACUTAL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "month",
+				"type": "nchar"
+			},
+			{
+				"name": "sales_category",
+				"type": "nchar"
+			},
+			{
+				"name": "actual_amount",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "product_actual"
+		}
+	}
+}

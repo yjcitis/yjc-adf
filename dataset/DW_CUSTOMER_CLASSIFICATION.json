@@ -1,0 +1,29 @@
+{
+	"name": "DW_CUSTOMER_CLASSIFICATION",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "customer_classification",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_classification_code",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer_classification"
+		}
+	}
+}

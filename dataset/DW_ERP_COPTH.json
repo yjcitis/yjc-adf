@@ -1,0 +1,20 @@
+{
+	"name": "DW_ERP_COPTH",
+	"properties": {
+		"description": "ERP 銷貨單",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "COPTH"
+		}
+	}
+}

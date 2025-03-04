@@ -1,0 +1,29 @@
+{
+	"name": "DW_FIN_RATIOS_ACCOUNT_1",
+	"properties": {
+		"description": "財務比率科目對應表",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "account_id_1",
+				"type": "nchar"
+			},
+			{
+				"name": "fin_ratios_id_1",
+				"type": "nchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "fin_ratios_account_1"
+		}
+	}
+}

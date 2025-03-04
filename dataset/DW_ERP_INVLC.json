@@ -1,0 +1,19 @@
+{
+	"name": "DW_ERP_INVLC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "INVLC"
+		}
+	}
+}

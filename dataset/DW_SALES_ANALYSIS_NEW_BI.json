@@ -1,0 +1,38 @@
+{
+	"name": "DW_SALES_ANALYSIS_NEW_BI",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "month",
+				"type": "nchar"
+			},
+			{
+				"name": "actual_amount",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "expected_amount",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sales_analysis_newbi"
+		}
+	}
+}

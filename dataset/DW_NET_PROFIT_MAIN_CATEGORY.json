@@ -1,0 +1,25 @@
+{
+	"name": "DW_NET_PROFIT_MAIN_CATEGORY",
+	"properties": {
+		"description": "net_profit_main_category",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "account_id",
+				"type": "nchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "net_profit_main_category"
+		}
+	}
+}

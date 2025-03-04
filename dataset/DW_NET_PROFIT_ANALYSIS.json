@@ -1,0 +1,34 @@
+{
+	"name": "DW_NET_PROFIT_ANALYSIS",
+	"properties": {
+		"description": "net_profit_analysis",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "account_id",
+				"type": "nchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "net_profit_analysis"
+		}
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"name": "DW_PURCHASE_DETAILS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "product_number",
+				"type": "nvarchar"
+			},
+			{
+				"name": "year",
+				"type": "nvarchar"
+			},
+			{
+				"name": "month",
+				"type": "nvarchar"
+			},
+			{
+				"name": "date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "document_number",
+				"type": "nvarchar"
+			},
+			{
+				"name": "supplier_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "quantity",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "packing_quantity",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "packing_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "purchase_details"
+		}
+	}
+}

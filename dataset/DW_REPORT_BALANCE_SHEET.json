@@ -1,0 +1,25 @@
+{
+	"name": "DW_REPORT_BALANCE_SHEET",
+	"properties": {
+		"description": "報表資產負債分類表",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "account_id",
+				"type": "nchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "report_balance_sheet"
+		}
+	}
+}

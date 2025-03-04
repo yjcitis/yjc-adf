@@ -1,0 +1,28 @@
+{
+	"name": "DW_FACTORY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "factory_code",
+				"type": "nchar"
+			},
+			{
+				"name": "factory_name",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "factory"
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name": "DW_SPECIAL_STOCK_DIVIDEND",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "account_number",
+				"type": "nchar"
+			},
+			{
+				"name": "amount",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SPECIAL_STOCK_DIVIDEND"
+		}
+	}
+}

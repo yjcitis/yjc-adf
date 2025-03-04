@@ -1,0 +1,227 @@
+{
+	"name": "EISLI",
+	"properties": {
+		"description": "應收帳款帳齡分析匯總檔",
+		"linkedServiceName": {
+			"referenceName": "ERP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ERP"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "COMPANY",
+				"type": "char"
+			},
+			{
+				"name": "CREATOR",
+				"type": "char"
+			},
+			{
+				"name": "USR_GROUP",
+				"type": "char"
+			},
+			{
+				"name": "CREATE_DATE",
+				"type": "char"
+			},
+			{
+				"name": "MODIFIER",
+				"type": "char"
+			},
+			{
+				"name": "MODI_DATE",
+				"type": "char"
+			},
+			{
+				"name": "FLAG",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "CREATE_TIME",
+				"type": "char"
+			},
+			{
+				"name": "MODI_TIME",
+				"type": "char"
+			},
+			{
+				"name": "TRANS_TYPE",
+				"type": "char"
+			},
+			{
+				"name": "TRANS_NAME",
+				"type": "char"
+			},
+			{
+				"name": "sync_date",
+				"type": "char"
+			},
+			{
+				"name": "sync_time",
+				"type": "char"
+			},
+			{
+				"name": "sync_mark",
+				"type": "char"
+			},
+			{
+				"name": "sync_count",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "DataUser",
+				"type": "char"
+			},
+			{
+				"name": "DataGroup",
+				"type": "char"
+			},
+			{
+				"name": "LI001",
+				"type": "char"
+			},
+			{
+				"name": "LI002",
+				"type": "char"
+			},
+			{
+				"name": "LI003",
+				"type": "char"
+			},
+			{
+				"name": "LI004",
+				"type": "char"
+			},
+			{
+				"name": "LI005",
+				"type": "char"
+			},
+			{
+				"name": "LI006",
+				"type": "char"
+			},
+			{
+				"name": "LI007",
+				"type": "char"
+			},
+			{
+				"name": "LI008",
+				"type": "char"
+			},
+			{
+				"name": "LI009",
+				"type": "char"
+			},
+			{
+				"name": "LI010",
+				"type": "char"
+			},
+			{
+				"name": "LI011",
+				"type": "char"
+			},
+			{
+				"name": "LI012",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI013",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI014",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI015",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI016",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI017",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI018",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI019",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI020",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "LI021",
+				"type": "char"
+			},
+			{
+				"name": "LI022",
+				"type": "char"
+			},
+			{
+				"name": "LI023",
+				"type": "char"
+			},
+			{
+				"name": "LI024",
+				"type": "char"
+			},
+			{
+				"name": "LI025",
+				"type": "char"
+			},
+			{
+				"name": "LI026",
+				"type": "char"
+			},
+			{
+				"name": "LI027",
+				"type": "char"
+			},
+			{
+				"name": "LI028",
+				"type": "char"
+			},
+			{
+				"name": "LI029",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EISLI"
+		}
+	}
+}

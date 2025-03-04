@@ -1,0 +1,19 @@
+{
+	"name": "DW_PRO_ON_JOB_NUM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PRO_ON_JOB_NUM"
+		}
+	}
+}

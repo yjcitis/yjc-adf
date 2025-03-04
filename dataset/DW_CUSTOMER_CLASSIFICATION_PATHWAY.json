@@ -1,0 +1,28 @@
+{
+	"name": "DW_CUSTOMER_CLASSIFICATION_PATHWAY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "customer_classification_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pathway_code",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer_classification_pathway"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"name": "DW_STG_COPTH",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "COPTH"
+		}
+	}
+}

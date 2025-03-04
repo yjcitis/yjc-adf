@@ -1,0 +1,19 @@
+{
+	"name": "DW_PROJECT_PROFIT_AND_LOSS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "project_profit_and_loss"
+		}
+	}
+}

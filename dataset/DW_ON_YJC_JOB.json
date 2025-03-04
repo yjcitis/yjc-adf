@@ -1,0 +1,45 @@
+{
+	"name": "DW_ON_YJC_JOB",
+	"properties": {
+		"description": "V_on_yjc_job",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PSysM1a01",
+				"type": "varchar"
+			},
+			{
+				"name": "PSysM1a02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PHumM0a01",
+				"type": "varchar"
+			},
+			{
+				"name": "PHumM0a02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PHumM0a162",
+				"type": "varchar"
+			},
+			{
+				"name": "PSysM1f02",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "on_jyc_job"
+		}
+	}
+}

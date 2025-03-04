@@ -1,0 +1,33 @@
+{
+	"name": "DW_PER_CAPITA_OUTPUT_VALUE_ACCOUNT",
+	"properties": {
+		"description": "PER_CAPITA_OUTPUT_VALUE_ACCOUNT",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "account_id",
+				"type": "nchar"
+			},
+			{
+				"name": "category_id",
+				"type": "nchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PER_CAPITA_OUTPUT_VALUE_ACCOUNT"
+		}
+	}
+}

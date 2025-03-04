@@ -1,0 +1,20 @@
+{
+	"name": "ERP_ACPTB_SNAP_M",
+	"properties": {
+		"description": "應付憑單單身檔_每月快照",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "ACPTB_SNAP_M"
+		}
+	}
+}

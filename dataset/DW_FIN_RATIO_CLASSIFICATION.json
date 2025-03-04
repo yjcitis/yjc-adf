@@ -1,0 +1,29 @@
+{
+	"name": "DW_FIN_RATIO_CLASSIFICATION",
+	"properties": {
+		"description": "fin_ratio_classification",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "category_id",
+				"type": "nchar"
+			},
+			{
+				"name": "category_name",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "fin_ratio_classification"
+		}
+	}
+}
