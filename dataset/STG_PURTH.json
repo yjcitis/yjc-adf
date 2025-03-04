@@ -1,0 +1,20 @@
+{
+	"name": "STG_PURTH",
+	"properties": {
+		"description": "進貨單單身",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "PURTH"
+		}
+	}
+}

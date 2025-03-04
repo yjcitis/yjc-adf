@@ -1,0 +1,46 @@
+{
+	"name": "V_BOM_STRUCTURE",
+	"properties": {
+		"description": "BOM結構表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP/VIEW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "prod",
+				"type": "varchar"
+			},
+			{
+				"name": "itemp",
+				"type": "varchar"
+			},
+			{
+				"name": "items",
+				"type": "varchar"
+			},
+			{
+				"name": "item_path",
+				"type": "varchar"
+			},
+			{
+				"name": "itemp_level",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "V_BOM_STRUCTURE"
+		}
+	}
+}

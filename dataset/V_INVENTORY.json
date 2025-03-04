@@ -1,0 +1,131 @@
+{
+	"name": "V_INVENTORY",
+	"properties": {
+		"description": "庫存異動記錄",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP/VIEW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "COMPANY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "品號",
+				"type": "nvarchar"
+			},
+			{
+				"name": "日期",
+				"type": "nvarchar"
+			},
+			{
+				"name": "入出別",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "單別",
+				"type": "nvarchar"
+			},
+			{
+				"name": "單號",
+				"type": "nvarchar"
+			},
+			{
+				"name": "序號",
+				"type": "nvarchar"
+			},
+			{
+				"name": "庫別",
+				"type": "nvarchar"
+			},
+			{
+				"name": "備註",
+				"type": "nvarchar"
+			},
+			{
+				"name": "本次單據異動庫存數量",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "剩餘數量",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 3
+			},
+			{
+				"name": "單據單位成本",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "異動金額",
+				"type": "decimal",
+				"precision": 23,
+				"scale": 6
+			},
+			{
+				"name": "剩餘金額",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "異動別",
+				"type": "nvarchar"
+			},
+			{
+				"name": "成本碼",
+				"type": "nvarchar"
+			},
+			{
+				"name": "批號",
+				"type": "nvarchar"
+			},
+			{
+				"name": "金額-材料",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "金額-人工",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "金額-製費",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "金額-加工",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "單據異動包裝數量",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "v_inventory"
+		}
+	}
+}

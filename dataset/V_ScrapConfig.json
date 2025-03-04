@@ -1,0 +1,29 @@
+{
+	"name": "V_ScrapConfig",
+	"properties": {
+		"description": "加工廠不良原因設定\n",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ScrapCode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ScrapReason",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "V_ScrapConfig"
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"name": "V_ProcessingStdWorkorderStatus",
+	"properties": {
+		"description": "加工廠標準品開工紀錄\n",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "WID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "ERPWorkorderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProcessItemNo",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Process",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ActualStartTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ActualEndTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Workers",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 0
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "V_ProcessingStdWorkorderStatus"
+		}
+	}
+}

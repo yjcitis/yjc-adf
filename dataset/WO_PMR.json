@@ -1,0 +1,211 @@
+{
+	"name": "WO_PMR",
+	"properties": {
+		"description": "工單",
+		"linkedServiceName": {
+			"referenceName": "PMR",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "PMR"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "wo_type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "wo_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_plan_start_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_plan_end_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plant",
+				"type": "nvarchar"
+			},
+			{
+				"name": "line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "wo_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plan_qty",
+				"type": "decimal",
+				"precision": 16,
+				"scale": 3
+			},
+			{
+				"name": "input_stock_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_seq",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CSD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plan_product_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "plan_product_qty_day",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "plan_start_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plan_end_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plan_alert",
+				"type": "nvarchar"
+			},
+			{
+				"name": "line_alert",
+				"type": "nvarchar"
+			},
+			{
+				"name": "done_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "undone_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "erp_status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "limilt_wh",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "total_wh",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "check_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mes_done_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "WO"
+		}
+	}
+}

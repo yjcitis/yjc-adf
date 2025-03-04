@@ -1,0 +1,83 @@
+{
+	"name": "V_PURCHASE_DETAILS_WITH_COST",
+	"properties": {
+		"description": "BI採購明細與成本整合表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP/VIEW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "company",
+				"type": "varchar"
+			},
+			{
+				"name": "product_number",
+				"type": "nvarchar"
+			},
+			{
+				"name": "purchase_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "purchase_qty",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "purchase_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "packing_quantity",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "packing_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ym",
+				"type": "nvarchar"
+			},
+			{
+				"name": "converted_qty",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "stock_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "unit_cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "supplier_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "document_number",
+				"type": "nvarchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "V_PURCHASE_DETAILS_WITH_COST"
+		}
+	}
+}

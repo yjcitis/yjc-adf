@@ -1,0 +1,20 @@
+{
+	"name": "STG_INVLA",
+	"properties": {
+		"description": "庫存異動明細資料檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "INVLA"
+		}
+	}
+}

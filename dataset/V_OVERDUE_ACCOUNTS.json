@@ -1,0 +1,77 @@
+{
+	"name": "V_OVERDUE_ACCOUNTS",
+	"properties": {
+		"description": "逾期帳款彙總",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP/VIEW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "snap_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "category",
+				"type": "varchar"
+			},
+			{
+				"name": "COMPANY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plan_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "plan_mon",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "cust",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sales",
+				"type": "nvarchar"
+			},
+			{
+				"name": "amt_plan",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "tax",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "amt_real",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "amt_final",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			}
+		],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "V_OVERDUE_ACCOUNTS"
+		}
+	}
+}

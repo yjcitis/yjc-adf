@@ -1,0 +1,167 @@
+{
+	"name": "V_PO_INFO",
+	"properties": {
+		"description": "採購單完整明細",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP/VIEW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "po_type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "po_no",
+				"type": "nvarchar"
+			},
+			{
+				"name": "po_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "cur",
+				"type": "nvarchar"
+			},
+			{
+				"name": "exrate",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 9
+			},
+			{
+				"name": "payment_term",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plant_type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "po_emp",
+				"type": "nvarchar"
+			},
+			{
+				"name": "taxation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "total_amt",
+				"type": "decimal",
+				"precision": 14,
+				"scale": 2
+			},
+			{
+				"name": "tax",
+				"type": "decimal",
+				"precision": 14,
+				"scale": 2
+			},
+			{
+				"name": "totoal_qty",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "doc_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "total_package_qty",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "seq",
+				"type": "nvarchar"
+			},
+			{
+				"name": "item",
+				"type": "nvarchar"
+			},
+			{
+				"name": "item_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "from_wh",
+				"type": "nvarchar"
+			},
+			{
+				"name": "po_qty",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "price",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "amt",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "plan_delivery_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "real_qty",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "case_closed_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "confirm_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "urgent_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "package_qty",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "real_package_qty",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "package_unit",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "V_PO_INFO"
+		}
+	}
+}

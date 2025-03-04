@@ -1,0 +1,81 @@
+{
+	"name": "V_PO_AvgPrice_Month",
+	"properties": {
+		"description": "月均採購單價",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE/VIEW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "item",
+				"type": "nvarchar"
+			},
+			{
+				"name": "po_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "po_mon",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "pre_po_qty",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 3
+			},
+			{
+				"name": "po_qty",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 3
+			},
+			{
+				"name": "pre_amt",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "amt",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "pre_avg_price_mon",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "avg_price_mon",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "cur",
+				"type": "nvarchar"
+			},
+			{
+				"name": "real_qty",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "V_PO_AvgPrice_Month"
+		}
+	}
+}

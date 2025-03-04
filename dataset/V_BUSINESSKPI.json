@@ -1,0 +1,43 @@
+{
+	"name": "V_BUSINESSKPI",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "west_year_month",
+				"type": "nchar"
+			},
+			{
+				"name": "customer_classification_code",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "kpi",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "west_year",
+				"type": "nchar"
+			},
+			{
+				"name": "west_month",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "V_businesskpi"
+		}
+	}
+}

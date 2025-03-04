@@ -1,0 +1,277 @@
+{
+	"name": "Tag_WMS",
+	"properties": {
+		"description": "標籤",
+		"linkedServiceName": {
+			"referenceName": "WMS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "WMS"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mfg_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "exp_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "lot_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "box_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "wo_carrier_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "storage_conditions",
+				"type": "nvarchar"
+			},
+			{
+				"name": "company_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "company_address",
+				"type": "nvarchar"
+			},
+			{
+				"name": "origin",
+				"type": "nvarchar"
+			},
+			{
+				"name": "tel",
+				"type": "nvarchar"
+			},
+			{
+				"name": "coa",
+				"type": "nvarchar"
+			},
+			{
+				"name": "table_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "table_id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "PrinterName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BarTenderLabel",
+				"type": "nvarchar"
+			},
+			{
+				"name": "QRcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Is_Print",
+				"type": "nvarchar"
+			},
+			{
+				"name": "status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "virtual_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "wo_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "seq",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "page_count",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "is_hold",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pk_pallet_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pk_space_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pk_stock_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "receiver_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pk_virtual_id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "spec",
+				"type": "nvarchar"
+			},
+			{
+				"name": "module",
+				"type": "nvarchar"
+			},
+			{
+				"name": "origin_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "lot_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "lot_seq",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "stock_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_seq",
+				"type": "nvarchar"
+			},
+			{
+				"name": "dest_stock_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "picking_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pk_picking_id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "exp_days",
+				"type": "nvarchar"
+			},
+			{
+				"name": "space_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pallet_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "root_box_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "property",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Tag"
+		}
+	}
+}

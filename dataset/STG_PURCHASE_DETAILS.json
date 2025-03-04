@@ -1,0 +1,89 @@
+{
+	"name": "STG_PURCHASE_DETAILS",
+	"properties": {
+		"description": "BI採購明細與成本",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "company",
+				"type": "varchar"
+			},
+			{
+				"name": "product_number",
+				"type": "nvarchar"
+			},
+			{
+				"name": "purchase_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "purchase_qty",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "purchase_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "packing_quantity",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "packing_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ym",
+				"type": "nvarchar"
+			},
+			{
+				"name": "converted_qty",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "stock_unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "unit_cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "supplier_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "document_number",
+				"type": "nvarchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "PURCHASE_DETAILS"
+		}
+	}
+}

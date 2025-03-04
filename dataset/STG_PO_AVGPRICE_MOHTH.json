@@ -1,0 +1,92 @@
+{
+	"name": "STG_PO_AVGPRICE_MOHTH",
+	"properties": {
+		"description": "月均採購歷史記錄",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "item",
+				"type": "nvarchar"
+			},
+			{
+				"name": "po_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "po_mon",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "pre_po_qty",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 3
+			},
+			{
+				"name": "po_qty",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 3
+			},
+			{
+				"name": "pre_amt",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "amt",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "pre_avg_price_mon",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "avg_price_mon",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "cur",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pre_real_qty",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 3
+			},
+			{
+				"name": "real_qty",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 3
+			},
+			{
+				"name": "etl_date",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "stg_po_avgprice_month"
+		}
+	}
+}

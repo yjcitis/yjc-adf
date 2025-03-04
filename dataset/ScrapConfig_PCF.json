@@ -1,0 +1,46 @@
+{
+	"name": "ScrapConfig_PCF",
+	"properties": {
+		"description": "報廢原因設定 ",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "SID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Version",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ScrapCode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ScrapReason",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ScrapConfig"
+		}
+	}
+}

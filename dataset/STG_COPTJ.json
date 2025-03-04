@@ -1,0 +1,20 @@
+{
+	"name": "STG_COPTJ",
+	"properties": {
+		"description": "銷退",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "COPTJ"
+		}
+	}
+}

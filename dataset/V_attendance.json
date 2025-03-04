@@ -1,0 +1,69 @@
+{
+	"name": "V_attendance",
+	"properties": {
+		"description": "每日打卡記錄",
+		"linkedServiceName": {
+			"referenceName": "HR",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "HR/VIEW"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "position",
+				"type": "nvarchar"
+			},
+			{
+				"name": "depid",
+				"type": "varchar"
+			},
+			{
+				"name": "department",
+				"type": "nvarchar"
+			},
+			{
+				"name": "employee_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "wdate",
+				"type": "varchar"
+			},
+			{
+				"name": "start_working_time",
+				"type": "varchar"
+			},
+			{
+				"name": "end_working_time",
+				"type": "varchar"
+			},
+			{
+				"name": "description",
+				"type": "varchar"
+			},
+			{
+				"name": "PMaiM2a01",
+				"type": "varchar"
+			},
+			{
+				"name": "PAdmM0b01",
+				"type": "varchar"
+			},
+			{
+				"name": "PAdmM0b02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PAdmM0b15",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "V_attendance"
+		}
+	}
+}

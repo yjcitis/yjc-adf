@@ -1,0 +1,83 @@
+{
+	"name": "STG_SALES_AGG_REPORT",
+	"properties": {
+		"description": "月銷售匯總",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ship_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ship_mon",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ym",
+				"type": "varchar"
+			},
+			{
+				"name": "cust",
+				"type": "nvarchar"
+			},
+			{
+				"name": "item",
+				"type": "nvarchar"
+			},
+			{
+				"name": "item_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "current_local_amount",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "agg_current_local_amount_by_year",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "avg_current_local_amount_by_year",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "current_local_tax",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "agg_current_local_tax_by_year",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "avg_current_local_tax_by_year",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "stg_sales_agg_report"
+		}
+	}
+}

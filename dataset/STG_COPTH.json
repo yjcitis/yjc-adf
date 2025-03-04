@@ -1,0 +1,20 @@
+{
+	"name": "STG_COPTH",
+	"properties": {
+		"description": "銷貨單單身與成本",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "STAGE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "COPTH"
+		}
+	}
+}

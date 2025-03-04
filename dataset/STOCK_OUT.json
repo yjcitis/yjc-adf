@@ -1,0 +1,38 @@
+{
+	"name": "STOCK_OUT",
+	"properties": {
+		"description": "stock_out",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "month",
+				"type": "nchar"
+			},
+			{
+				"name": "day",
+				"type": "nchar"
+			},
+			{
+				"name": "stock",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "stock_out"
+		}
+	}
+}

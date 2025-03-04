@@ -1,0 +1,19 @@
+{
+	"name": "PROJECT_PROFIT_AND_LOSS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "project_profit_and_loss"
+		}
+	}
+}

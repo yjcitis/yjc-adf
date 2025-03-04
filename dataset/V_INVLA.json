@@ -1,0 +1,233 @@
+{
+	"name": "V_INVLA",
+	"properties": {
+		"description": "庫存異動明細資料檔",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "LA001",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA004",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA005",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "LA006",
+				"type": "nchar"
+			},
+			{
+				"name": "LA007",
+				"type": "nchar"
+			},
+			{
+				"name": "LA008",
+				"type": "nchar"
+			},
+			{
+				"name": "LA009",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA010",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA011",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "LA012",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "LA013",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "LA014",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA015",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA016",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA017",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "LA018",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "LA019",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "LA020",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "LA021",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "LA002",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA003",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA022",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA023",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "LA024",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "LA025",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA026",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA027",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA028",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA029",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA030",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "LA031",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA032",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA033",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LA034",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF01",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF03",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF04",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF05",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF06",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF07",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF08",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF09",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF10",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "V_INVLA"
+		}
+	}
+}
