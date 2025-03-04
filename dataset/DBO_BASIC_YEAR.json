@@ -1,0 +1,20 @@
+{
+	"name": "DBO_BASIC_YEAR",
+	"properties": {
+		"description": "基本資料年",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "BASIC_YEAR"
+		}
+	}
+}

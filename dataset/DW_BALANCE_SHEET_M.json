@@ -1,0 +1,42 @@
+{
+	"name": "DW_BALANCE_SHEET_M",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "account_id",
+				"type": "nchar"
+			},
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "month",
+				"type": "nchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "percen",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "balance_sheet_m"
+		}
+	}
+}

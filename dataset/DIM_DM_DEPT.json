@@ -1,0 +1,51 @@
+{
+	"name": "DIM_DM_DEPT",
+	"properties": {
+		"description": "部門維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dept_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dept_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Depreciation_Acct",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_DEPT"
+		}
+	}
+}

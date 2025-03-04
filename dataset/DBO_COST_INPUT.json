@@ -1,0 +1,20 @@
+{
+	"name": "DBO_COST_INPUT",
+	"properties": {
+		"description": "cost_input",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "COST_INPUT"
+		}
+	}
+}

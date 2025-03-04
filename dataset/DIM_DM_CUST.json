@@ -1,0 +1,243 @@
+{
+	"name": "DIM_DM_CUST",
+	"properties": {
+		"description": "客戶維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cust",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cust_SName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cust_FName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Person_In_Charge",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Contact_Person",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Tel_No_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Tel_No_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Fax_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EMail",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GUI_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Capital",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Annua_Turnover",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Number_Of_Workers",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 0
+			},
+			{
+				"name": "Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dept_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Salesman",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Trx_Category_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Trx_Category_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Trx_Category_4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Opening_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "First_Trading_Day",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Last_Trading_Day",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RegAddress_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RegAddress_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Invoice_Address_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Invoice_Address_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Shipping_Address_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sales_Rating",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Credit_Rating",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Price_Condition",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Terms",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Credit_Limit_Control",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Credits",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Exceed_Rate",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Pricing_Method",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Discount_Rate",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Invoices_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Taxation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sending_Method",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Postal_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Method",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Receipt_Bills",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Billing_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Collection_Date_Plan",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "Funding_DATE",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "Payment_Bank_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Shipping_Method",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_CUST"
+		}
+	}
+}

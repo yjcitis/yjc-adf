@@ -1,0 +1,295 @@
+{
+	"name": "DIM_DM_ACC",
+	"properties": {
+		"description": "會科維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acct_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acct_Level",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acct_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acct_Alias",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acct_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Asset_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Report_Debit_Credit",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "COA_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dept_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cash_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FinanceRatio_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WriteOff_Type_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WriteOff_Control_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WriteOff_Type_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WriteOff_Control_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Effect_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Default_Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Debit_Credit",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "MA020",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA021",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_WriteOff_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cash_COA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_CashFlow_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COGS_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA026",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Budget_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA028",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MA029",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "MA030",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA031",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA032",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Effect_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Relation_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_SEquity_Item",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Exchange_balance_From",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Exchange_Rate_From",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Operation_Type_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Operation_Type_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Operation_Type_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA041",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA042",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA043",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA044",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA045",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA046",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA047",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA048",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA049",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GL_Book_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA051",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA052",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MA053",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MA054",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "MA055",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "MA056",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA057",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA058",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA059",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA060",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MA061",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_ACC"
+		}
+	}
+}

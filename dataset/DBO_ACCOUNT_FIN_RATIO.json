@@ -1,0 +1,20 @@
+{
+	"name": "DBO_ACCOUNT_FIN_RATIO",
+	"properties": {
+		"description": "account_fin_ratio",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ACCOUNT_FIN_RATIO"
+		}
+	}
+}

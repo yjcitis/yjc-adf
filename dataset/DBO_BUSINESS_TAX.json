@@ -1,0 +1,20 @@
+{
+	"name": "DBO_BUSINESS_TAX",
+	"properties": {
+		"description": "BUSINESS_TAX",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "BUSINESS_TAX"
+		}
+	}
+}

@@ -1,0 +1,285 @@
+{
+	"name": "DIM_DM_SUPPLY",
+	"properties": {
+		"description": "供應商維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sup_SName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sup_FName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sup_Class",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Unit_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Country_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Zone_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEL_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEL_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Fax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Email",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Chief_Man",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Contact_Person_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Address_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Address_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sup_Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Opening_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Capital",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Crew",
+				"type": "decimal",
+				"precision": 7,
+				"scale": 0
+			},
+			{
+				"name": "Send_Method_PO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "First_Trx",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Recent_Trx",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Method",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Terms",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Price_Conditions",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Bank",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Bank_Acount_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Bill_Way",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Invoice_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lv_ABC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Delivery_Rating",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Quality_Rating",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Account_Month",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Account_Day",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Month",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Day",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ticket_Month",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ticket_Day",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payable_Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Process_Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Bill_Account",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Taxation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Partial_Delivery_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inv_Zone_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Buyer",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Contact_Person_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Contact_Person_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inv_Zone_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Billing_Address_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Billing_Address_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Terms_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Invoice_Attached_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Voucher_Print_Format",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Deposit_Ratio",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Send_By_Value_Center_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Opens_Discount_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Invoice_Email",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Relationship_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_SUPPLY"
+		}
+	}
+}

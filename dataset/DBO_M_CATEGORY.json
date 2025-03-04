@@ -1,0 +1,20 @@
+{
+	"name": "DBO_M_CATEGORY",
+	"properties": {
+		"description": "M_CATEGORY",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "M_CATEGORY"
+		}
+	}
+}

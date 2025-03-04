@@ -1,0 +1,99 @@
+{
+	"name": "DIM_DM_COMP",
+	"properties": {
+		"description": "公司維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Company_SName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Company_FName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Save_Path",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Tel_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Fax_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GUI_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Tax_Registation_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Owner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Email",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reg_Addr_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reg_Addr_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Company_FName_En",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reg_EngAddr_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reg_EngAddr_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Stock_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_COMP"
+		}
+	}
+}

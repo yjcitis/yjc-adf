@@ -1,0 +1,19 @@
+{
+	"name": "DBO_INVENTORY_SALES",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "INVENTORY_SALES"
+		}
+	}
+}

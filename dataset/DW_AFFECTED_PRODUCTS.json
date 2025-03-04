@@ -1,0 +1,41 @@
+{
+	"name": "DW_AFFECTED_PRODUCTS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "product_number_main",
+				"type": "nchar"
+			},
+			{
+				"name": "price",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "product_number_element",
+				"type": "nchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AFFECTED_PRODUCTS"
+		}
+	}
+}

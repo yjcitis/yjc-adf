@@ -1,0 +1,20 @@
+{
+	"name": "DBO_INCOME_STATEMENT",
+	"properties": {
+		"description": "INCOME_STATEMENT",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "INCOME_STATEMENT"
+		}
+	}
+}

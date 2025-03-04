@@ -1,0 +1,20 @@
+{
+	"name": "DBO_SPECIAL_STOCK_DIVIDEND",
+	"properties": {
+		"description": "SPECIAL_STOCK_DIVIDEND",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SPECIAL_STOCK_DIVIDEND"
+		}
+	}
+}

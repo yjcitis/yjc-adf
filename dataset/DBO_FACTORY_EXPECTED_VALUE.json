@@ -1,0 +1,20 @@
+{
+	"name": "DBO_FACTORY_EXPECTED_VALUE",
+	"properties": {
+		"description": "廠別預計產值檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FACTORY_EXPECTED_VALUE"
+		}
+	}
+}

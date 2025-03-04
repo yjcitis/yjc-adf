@@ -1,0 +1,747 @@
+{
+	"name": "DIM_DM_PRODUCT",
+	"properties": {
+		"description": "產品維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Spec",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SKU",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_7",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_8",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_9",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_A",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_B",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_C",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Std_Process_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Std_Process",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Doc_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Barcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Unit_Weight",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 6
+			},
+			{
+				"name": "Weight_Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Outer_Package_Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Main_WH",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Planner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_Mgmt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Bonded_Goods",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cycle_Counting_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Batch_Mgmt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Batch",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "Valid_Date",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 0
+			},
+			{
+				"name": "Recheck_Days",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 0
+			},
+			{
+				"name": "Item_Attr",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Low_Lv_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lv_ABC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prod_Draw_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Effective_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Expiration_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Main_Supplier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Is_Taxable",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Restocking_Policy",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Replenishment_Period",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Fixed_Lead_Days",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "Change_Lead_Days",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "Min_Supplement",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "Replenishment_Times",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "Receipt_Times",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "Picking_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inspection_Method",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Overcharge_Mgmt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Over_Yield",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Std_Purchase_Price",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Std_Selling_Price",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Recent_Purchase_Original_Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Recent_Purchase_Price",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Recent_Purchase_Price_Local",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Retail_Price",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Retail_Price_Include_Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sale_Price_1",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Sale_Price_2",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Sale_Price_3",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Sale_Price_4",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Sale_Price_5",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Sale_Price_6",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Sale_Price_Tax_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sale_Price_Tax_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sale_Price_Tax_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sale_Price_Tax_4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sale_Price_Tax_5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sale_Price_Tax_6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Std_Matl_Cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Std_Emp_Cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Std_MFG_Cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Std_Process_Cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Emp_Cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "MFG_Cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Process_Cost",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Inventory_Qty",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Inventory_Amt",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Modified_Spec",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Buyer",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MFG_Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Outer_Package_Volume",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 3
+			},
+			{
+				"name": "Outer_Package_Item_Qty",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 3
+			},
+			{
+				"name": "Outer_Package_Weight",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 3
+			},
+			{
+				"name": "Outer_Package_GW",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 3
+			},
+			{
+				"name": "Small_Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inspection_Days",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "QC_Category",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MRP_Ahead_Delivery_Days_MFG",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "MRP_Ahead_Delivery_Days_PO",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "Article_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Size",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Tariff_Rate",
+				"type": "decimal",
+				"precision": 7,
+				"scale": 4
+			},
+			{
+				"name": "Purchase_Price_Control",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sale_Price_Control",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Price_Cap_Rate",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Price_Lower_Limit_Rate",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Overdelivery_Mgmt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Overdelivery_Rate",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Inventory_Packing_Qty",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 3
+			},
+			{
+				"name": "Packing_Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Fixed_Weight",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prod_SN_Mgmt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Length_CM",
+				"type": "decimal",
+				"precision": 6,
+				"scale": 1
+			},
+			{
+				"name": "Width_CM",
+				"type": "decimal",
+				"precision": 6,
+				"scale": 1
+			},
+			{
+				"name": "Height_CM",
+				"type": "decimal",
+				"precision": 6,
+				"scale": 1
+			},
+			{
+				"name": "Working_Hours_Base",
+				"type": "decimal",
+				"precision": 7,
+				"scale": 4
+			},
+			{
+				"name": "Business_Floor_Price",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Business_Floor_Price_Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Goods_Tax_Rate",
+				"type": "decimal",
+				"precision": 7,
+				"scale": 6
+			},
+			{
+				"name": "Std_Purchase_Price_Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Std_Sale_Price_Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Purchase_Price_Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Scales",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Tax_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Is_HandlingCharge",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prod_Control_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Gift_SN",
+				"type": "decimal",
+				"precision": 2,
+				"scale": 0
+			},
+			{
+				"name": "Is_Health_Donation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Health_Donation_Amt",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Default_Sale_Price",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Labels",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SKUs_To_HG",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "Measure_Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Std_EQP_Output",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "Pick_Up_Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Pick_Up_Unit_L",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Purchasing_Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sales_Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Is_Tax_Refund",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sales_Acceptance_Control",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sales_Acceptable_Days",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sales_Allowable_Period",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 0
+			},
+			{
+				"name": "Cancellation_Allowance_Control",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cancellation_Days",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cancellation_Validity_Period",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 0
+			},
+			{
+				"name": "Receipt_Allowable_Validity_Period",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 0
+			},
+			{
+				"name": "ItemIn_Acceptance_Control",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ItemIn_Days",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Return_Allowed_Validity_Period",
+				"type": "decimal",
+				"precision": 4,
+				"scale": 0
+			},
+			{
+				"name": "Return_Acceptance_Control",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Returns_Days",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Warranty_Percentage_Of_Selling",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 5
+			},
+			{
+				"name": "Warranty_Period",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "Replenishment_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Recipe",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_PRODUCT"
+		}
+	}
+}

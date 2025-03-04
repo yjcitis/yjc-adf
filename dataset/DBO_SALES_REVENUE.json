@@ -1,0 +1,19 @@
+{
+	"name": "DBO_SALES_REVENUE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SALES_REVENUE"
+		}
+	}
+}

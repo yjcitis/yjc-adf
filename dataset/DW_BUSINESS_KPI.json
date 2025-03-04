@@ -1,0 +1,45 @@
+{
+	"name": "DW_BUSINESS_KPI",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "west_year_month",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "customer_classification_code",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "kpi",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "west_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "west_month",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "businesskpi"
+		}
+	}
+}

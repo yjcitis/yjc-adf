@@ -1,0 +1,20 @@
+{
+	"name": "DBO_PROFIT_AND_LOSS_BUDGET",
+	"properties": {
+		"description": "profit_and_loss_budget",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PROFIT_AND_LOSS_BUDGET"
+		}
+	}
+}

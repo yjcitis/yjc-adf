@@ -1,0 +1,33 @@
+{
+	"name": "DW_B_CATEGORY",
+	"properties": {
+		"description": "B_CATEGORY",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "account_id",
+				"type": "nchar"
+			},
+			{
+				"name": "category_id",
+				"type": "nchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "B_CATEGORY"
+		}
+	}
+}

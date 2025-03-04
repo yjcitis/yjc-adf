@@ -1,0 +1,20 @@
+{
+	"name": "DBO_BUDGET_GROSS_MARGIN",
+	"properties": {
+		"description": "budget_gross_margin",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "_BUDGET_GROSS_MARGIN"
+		}
+	}
+}

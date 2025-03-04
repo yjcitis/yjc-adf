@@ -1,0 +1,55 @@
+{
+	"name": "DIM_DM_CHANNEL",
+	"properties": {
+		"description": "交易對象分類方式維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Group_Id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_Id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_Sname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_Fname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_CHANNEL"
+		}
+	}
+}

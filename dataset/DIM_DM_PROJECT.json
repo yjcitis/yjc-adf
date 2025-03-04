@@ -1,0 +1,365 @@
+{
+	"name": "DIM_DM_PROJECT",
+	"properties": {
+		"description": "專案維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Project_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Project_SName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Project_FName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Project_Desc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cust",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Plant",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FX_Rate",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 9
+			},
+			{
+				"name": "Salesman",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Work_Site_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Work_Site_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Project_Owner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dept_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Project_Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Filing_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Contract_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Completion_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acceptance_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Acceptance_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Terminated_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Terminated_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Terminated_Reason",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Expected_Kickoff_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Estimated_Completion_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Real_Kickoff_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Real_Completion_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Progress_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Project_Billing_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Amount_Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ori_Project_Est_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Ori_Project_Est_TaxAmount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Project_Est_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Project_Est_TaxAmount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Ori_Project_M_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Ori_Project_M_TaxAmount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Project_M_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Project_M_TaxAmount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Ori_Received_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Received_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Confirm_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Confirm_Person",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Transfer_Count",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "Print_Count",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "Sign_Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Bid_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Note_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Note_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Expire_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Bank",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reject_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reject_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Description",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Project_Deposit_Rate",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Project_Deposit_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Project_Warranty_Amount",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Warranty_Amt_Payback_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payment_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Other_Payment_Agreements",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Warranty_Start_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Warranty_End_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Maintenance_Person",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Out_Of_Warranty_Desc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Pic_Path",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Order_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Order_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Business_Tax_Rate",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Taxation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Valuation_Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ori_Project_Est_Amount_T",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Project_Est_Amount_T",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Project_Deposit_Rate_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_PROJECT"
+		}
+	}
+}

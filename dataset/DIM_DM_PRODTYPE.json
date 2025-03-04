@@ -1,0 +1,97 @@
+{
+	"name": "DIM_DM_PRODTYPE",
+	"properties": {
+		"description": "產品分類維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Group_Id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Category_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sales_Revenue_Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sales_Return_Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sales_Discount_Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Warranty_Selling_Rate",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 5
+			},
+			{
+				"name": "Warranty_Months",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "Deferred_Revenue_Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Direct_Sales_Expense_Ratio",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "Cost_Of_Goods_Sold_Acc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cost_Of_Goods_Sold_Acc_Gift",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Cost_Of_Goods_Sold_Acc_SP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_PRODTYPE"
+		}
+	}
+}

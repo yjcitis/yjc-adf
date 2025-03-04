@@ -1,0 +1,20 @@
+{
+	"name": "DBO_NET_PROFIT_MAIN_CATEGORY",
+	"properties": {
+		"description": "net_profit_main_category",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "NET_PROFIT_MAIN_CATEGORY"
+		}
+	}
+}

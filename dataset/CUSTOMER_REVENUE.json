@@ -1,0 +1,42 @@
+{
+	"name": "CUSTOMER_REVENUE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "customer_code",
+				"type": "nchar"
+			},
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "month",
+				"type": "nchar"
+			},
+			{
+				"name": "actual_amount",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "expected_amount",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer_revenue"
+		}
+	}
+}

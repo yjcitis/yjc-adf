@@ -1,0 +1,20 @@
+{
+	"name": "DIM_DM_PROCESS",
+	"properties": {
+		"description": "工序維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_PROCESS "
+		}
+	}
+}

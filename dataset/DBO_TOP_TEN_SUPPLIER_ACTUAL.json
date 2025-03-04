@@ -1,0 +1,19 @@
+{
+	"name": "DBO_TOP_TEN_SUPPLIER_ACTUAL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TOP_TEN_SUPPLIER_ACTUAL"
+		}
+	}
+}

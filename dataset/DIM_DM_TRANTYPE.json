@@ -1,0 +1,401 @@
+{
+	"name": "DIM_DM_TRANTYPE",
+	"properties": {
+		"description": "單據類別維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Trx_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Trx_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Trx_Category",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code_Year",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "Code_Seq",
+				"type": "decimal",
+				"precision": 2,
+				"scale": 0
+			},
+			{
+				"name": "Code_Seq_Tax",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "Trx_Inventory_type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Trx_Acct",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Inventory_YN",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "Set_Cost_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Update_InventoryIn_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Update_InventoryOut_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Update_Check_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Auto_Confirm",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Auto_Print",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Auto_Invoice",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Allowance_Minus",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Inventory_IN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Direct_Checkout",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Checkout_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Com_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item_Input_Method",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Annotation_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Edit_Annotation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Sign_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Modifed_Sign_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Limited_Users_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Print_Page_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Page_Sign_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Doc_Format",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Doc_Format_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Doc_FName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Total_Page",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ036",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ037",
+				"type": "decimal",
+				"precision": 13,
+				"scale": 2
+			},
+			{
+				"name": "Set_Control_Price_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Sell_Price",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Use_Expired_Item_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ041",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Project_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ043",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_ProjectNo_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ045",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Project_Update_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ047",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_ARAP_WriteOff_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ049",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_ARAP_WriteOff_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ051",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Process_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ053",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ054",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ055",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ056",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ057",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ058",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ059",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ060",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Auto_Inventory_In",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_WriteOff_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ063",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_WriteOff_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ065",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ066",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ067",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ068",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ069",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_With_Tax",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ071",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ072",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ073",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ074",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ075",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ076",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "GL_Book_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ078",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Close_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ080",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "Set_Auto_Inventory_Out",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ082",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ083",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MQ084",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Auto_Received",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Auto_Received_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Advanced_Received_Full",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Lot_FIFO_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_TRANTYPE"
+		}
+	}
+}

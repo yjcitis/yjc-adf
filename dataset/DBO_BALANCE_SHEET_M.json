@@ -1,0 +1,19 @@
+{
+	"name": "DBO_BALANCE_SHEET_M",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "BALANCE_SHEET_M"
+		}
+	}
+}

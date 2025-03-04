@@ -1,0 +1,157 @@
+{
+	"name": "DIM_DM_WH",
+	"properties": {
+		"description": "庫別維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Factory_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_MRP_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Ship_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Lack_Ship_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC009",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC010",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_Contact",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_TEL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_FAX",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_Addr_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_Addr_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_EngAddr_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Inventory_EngAddr_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Sell_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Set_Available_YN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC020",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC021",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC022",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC023",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "MC024",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC025",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MC026",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC027",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC028",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC029",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_WH"
+		}
+	}
+}

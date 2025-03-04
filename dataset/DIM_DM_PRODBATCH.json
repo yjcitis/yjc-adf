@@ -1,0 +1,75 @@
+{
+	"name": "DIM_DM_PRODBATCH",
+	"properties": {
+		"description": "品號批號維度表",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DIM"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Item",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Batch_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "First_CheckIn_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Last_Check_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reference_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reference_No",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Case_Closed_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Effective_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Retest_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dim",
+			"table": "DIM_DM_PRODBATCH"
+		}
+	}
+}

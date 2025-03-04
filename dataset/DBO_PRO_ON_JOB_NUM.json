@@ -1,0 +1,41 @@
+{
+	"name": "DBO_PRO_ON_JOB_NUM",
+	"properties": {
+		"description": "PRO_ON_JOB_NUM",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ym",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ymd",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "on_job_num",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "ETL_DATE",
+				"type": "timestamp"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PRO_ON_JOB_NUM"
+		}
+	}
+}

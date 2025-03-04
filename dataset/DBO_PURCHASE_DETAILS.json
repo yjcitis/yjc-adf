@@ -1,0 +1,19 @@
+{
+	"name": "DBO_PURCHASE_DETAILS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PURCHASE_DETAILS"
+		}
+	}
+}

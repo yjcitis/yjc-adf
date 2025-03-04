@@ -1,0 +1,20 @@
+{
+	"name": "DBO_ON_YJC_JOB",
+	"properties": {
+		"description": "V_on_yjc_job",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ON_YJC_JOB"
+		}
+	}
+}

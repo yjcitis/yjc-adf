@@ -1,0 +1,38 @@
+{
+	"name": "COST_INPUT",
+	"properties": {
+		"description": "cost_input",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "month",
+				"type": "nchar"
+			},
+			{
+				"name": "cost_item_id",
+				"type": "nchar"
+			},
+			{
+				"name": "cost",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "cost_input"
+		}
+	}
+}

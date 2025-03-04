@@ -1,0 +1,20 @@
+{
+	"name": "DBO_REPORT_PROFIT_LOSS",
+	"properties": {
+		"description": "報表損益分類表",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "REPORT_PROFIT_LOSS"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "DW_BALANCE_SHEET",
+	"properties": {
+		"description": "balance_sheet",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "account_id",
+				"type": "nchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "balance_sheet"
+		}
+	}
+}

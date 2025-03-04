@@ -1,0 +1,20 @@
+{
+	"name": "DBO_STOCK_OUT",
+	"properties": {
+		"description": "STOCK_OUT",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "STOCK_OUT"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "DBO_FIN_RATIOS_1",
+	"properties": {
+		"description": "財務比率基本表",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FIN_RATIOS_1"
+		}
+	}
+}

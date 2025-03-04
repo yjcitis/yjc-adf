@@ -1,0 +1,20 @@
+{
+	"name": "DBO_REPORT_BALANCE_SHEET",
+	"properties": {
+		"description": "報表資產負債分類表",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "REPORT_BALANCE_SHEET"
+		}
+	}
+}

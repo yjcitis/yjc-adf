@@ -1,0 +1,29 @@
+{
+	"name": "DW_COST_ITEM",
+	"properties": {
+		"description": "cost_item",
+		"linkedServiceName": {
+			"referenceName": "LocalDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "cost_item_id",
+				"type": "nchar"
+			},
+			{
+				"name": "cost_item_name",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "cost_item"
+		}
+	}
+}

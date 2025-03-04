@@ -1,0 +1,19 @@
+{
+	"name": "DBO_AFFECTED_PRODUCTS_COSTS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AFFECTED_PRODUCTS_COSTS"
+		}
+	}
+}

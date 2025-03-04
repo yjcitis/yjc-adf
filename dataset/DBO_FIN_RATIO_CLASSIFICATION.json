@@ -1,0 +1,20 @@
+{
+	"name": "DBO_FIN_RATIO_CLASSIFICATION",
+	"properties": {
+		"description": "fin_ratio_classification",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/BI"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FIN_RATIO_CLASSIFICATION"
+		}
+	}
+}
