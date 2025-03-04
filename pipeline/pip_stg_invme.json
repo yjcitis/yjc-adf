@@ -1,0 +1,40 @@
+{
+	"name": "pip_stg_invme",
+	"properties": {
+		"description": "INVME轉換",
+		"activities": [
+			{
+				"name": "DF_STG_INVME",
+				"description": "tt",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "DF_STG_INVME",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine",
+					"continuationSettings": {
+						"customizedCheckpointKey": "62508245-0fd7-4300-b75f-d87a18a5905d"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "PIP_STAGE"
+		},
+		"annotations": []
+	}
+}
