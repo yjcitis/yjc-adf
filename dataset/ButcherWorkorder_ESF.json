@@ -1,0 +1,169 @@
+{
+	"name": "ButcherWorkorder_ESF",
+	"properties": {
+		"description": "電宰廠工單",
+		"linkedServiceName": {
+			"referenceName": "MES_ESF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/電宰廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BsID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "BwID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "CarNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LineID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LotID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Package",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "CartonComment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PackageUnit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EffectiveTime",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "ExpectedStartDate",
+				"type": "varchar"
+			},
+			{
+				"name": "ManufactureDate",
+				"type": "varchar"
+			},
+			{
+				"name": "ExpirationDate",
+				"type": "varchar"
+			},
+			{
+				"name": "Storage",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Address",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Origin",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Telphone",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PrintQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "ExpectedQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Warehouse",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MultiLabel",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Icon",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MainMaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GroupName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PublishDate",
+				"type": "date"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ButcherWorkorder"
+		}
+	}
+}

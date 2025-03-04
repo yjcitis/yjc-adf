@@ -1,0 +1,46 @@
+{
+	"name": "AbnormalConfig_BIF",
+	"properties": {
+		"description": "不良原因設定 ",
+		"linkedServiceName": {
+			"referenceName": "MES_BIF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/配料室"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "AID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Version",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "AbnormalCode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AbnormalReason",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AbnormalConfig"
+		}
+	}
+}

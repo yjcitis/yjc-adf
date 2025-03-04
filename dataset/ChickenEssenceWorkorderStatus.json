@@ -1,0 +1,20 @@
+{
+	"name": "ChickenEssenceWorkorderStatus",
+	"properties": {
+		"description": "雞精廠開工紀錄",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/MES/雞精廠"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mes",
+			"table": "ChickenEssenceWorkorderStatus"
+		}
+	}
+}

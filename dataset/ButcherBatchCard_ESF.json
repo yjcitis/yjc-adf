@@ -1,0 +1,118 @@
+{
+	"name": "ButcherBatchCard_ESF",
+	"properties": {
+		"description": "電宰產品標籤 ",
+		"linkedServiceName": {
+			"referenceName": "MES_ESF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/電宰廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Barcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PackageUnit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CartonComment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ManufactureDate",
+				"type": "date"
+			},
+			{
+				"name": "ExpirationDate",
+				"type": "date"
+			},
+			{
+				"name": "LotID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CartonNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Storage",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Address",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Origin",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Telphone",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Agri",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Icon",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ButcherBatchCard"
+		}
+	}
+}

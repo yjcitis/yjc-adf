@@ -1,0 +1,85 @@
+{
+	"name": "ButcherJointMaterialConfig_ESF",
+	"properties": {
+		"description": "電宰連產品設定 ",
+		"linkedServiceName": {
+			"referenceName": "MES_ESF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/電宰廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "JointMaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "JointMaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Package",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Warehouse",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PackageUnit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CartonComment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MultiLabel",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Storage",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EffectiveTime",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "PrintCompany",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Icon",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ButcherJointMaterialConfig"
+		}
+	}
+}

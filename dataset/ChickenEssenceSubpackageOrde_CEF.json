@@ -1,0 +1,82 @@
+{
+	"name": "ChickenEssenceSubpackageOrde_CEF",
+	"properties": {
+		"description": "雞精廠分裝工單",
+		"linkedServiceName": {
+			"referenceName": "MES_CEF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/雞精廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "CsID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "ExpectedStartDate",
+				"type": "varchar"
+			},
+			{
+				"name": "Sequence",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExpectedEndDate",
+				"type": "varchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExpectedQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Unit",
+				"type": "varchar"
+			},
+			{
+				"name": "StockID",
+				"type": "varchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ChickenEssenceSubpackageOrde"
+		}
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"name": "BASIC_YEAR",
+	"properties": {
+		"description": "基本資料年",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "nchar"
+			},
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "fin_ratios_id_1_and_2",
+				"type": "nchar"
+			},
+			{
+				"name": "fin_ratios_name_1_and_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "class",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "V_basic_year"
+		}
+	}
+}

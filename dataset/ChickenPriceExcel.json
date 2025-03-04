@@ -1,0 +1,38 @@
+{
+	"name": "ChickenPriceExcel",
+	"properties": {
+		"description": "台灣地區家禽產地每日交易行情表",
+		"linkedServiceName": {
+			"referenceName": "AzureFileStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "FILE"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureFileStorageLocation",
+				"fileName": "台灣地區家禽產地每日交易行情表.xlsx",
+				"folderPath": "毛雞單價"
+			},
+			"sheetIndex": 0,
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "日期",
+				"type": "String"
+			},
+			{
+				"name": "種類",
+				"type": "String"
+			},
+			{
+				"name": "單價",
+				"type": "String"
+			}
+		]
+	}
+}

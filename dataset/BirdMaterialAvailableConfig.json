@@ -1,0 +1,20 @@
+{
+	"name": "BirdMaterialAvailableConfig",
+	"properties": {
+		"description": "活禽品號品名對應設定表 ",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/MES/電宰廠"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mes",
+			"table": "BirdMaterialAvailableConfig"
+		}
+	}
+}

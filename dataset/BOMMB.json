@@ -1,0 +1,265 @@
+{
+	"name": "BOMMB",
+	"properties": {
+		"description": "BOM 取替代料件單身檔",
+		"linkedServiceName": {
+			"referenceName": "ERP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ERP"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "COMPANY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATOR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USR_GROUP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATE_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODI_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FLAG",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "CREATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODI_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TRANS_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TRANS_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_mark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_count",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "DataUser",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DataGroup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC001",
+				"type": "nchar"
+			},
+			{
+				"name": "MC002",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC003",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC004",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "MC005",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC006",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC007",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC008",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC009",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC010",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC011",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MC012",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "MC013",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC014",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC015",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC016",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC017",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC018",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC019",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC020",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "MC021",
+				"type": "decimal",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "MC022",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC023",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MC024",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC025",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC026",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MC027",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF01",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF03",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF04",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF05",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF06",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF07",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF08",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF09",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF10",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "BOMMB"
+		}
+	}
+}

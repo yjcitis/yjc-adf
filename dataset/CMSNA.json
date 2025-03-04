@@ -1,0 +1,281 @@
+{
+	"name": "CMSNA",
+	"properties": {
+		"description": "付款條件檔",
+		"linkedServiceName": {
+			"referenceName": "ERP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ERP"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "COMPANY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATOR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USR_GROUP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATE_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODI_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FLAG",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "CREATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODI_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TRANS_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TRANS_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_mark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_count",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "DataUser",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DataGroup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA001",
+				"type": "nchar"
+			},
+			{
+				"name": "NA002",
+				"type": "nchar"
+			},
+			{
+				"name": "NA003",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA004",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA005",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "NA006",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA007",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA008",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA009",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "NA010",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA011",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA012",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA013",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA014",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "NA015",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "NA016",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "NA017",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA018",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA019",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA020",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "NA021",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "NA022",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA023",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA024",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA025",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA026",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "NA027",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA028",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA029",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NA030",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF01",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF03",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF04",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF05",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF06",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF07",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF08",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF09",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF10",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CMSNA"
+		}
+	}
+}

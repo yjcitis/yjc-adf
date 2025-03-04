@@ -1,0 +1,47 @@
+{
+	"name": "BirdMaterialAvailableConfig_ESF",
+	"properties": {
+		"description": "活禽品號品名對應設定表 ",
+		"linkedServiceName": {
+			"referenceName": "MES_ESF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/電宰廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PackageUnit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Available",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "BirdMaterialAvailableConfig"
+		}
+	}
+}

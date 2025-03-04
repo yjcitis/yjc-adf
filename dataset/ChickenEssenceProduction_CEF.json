@@ -1,0 +1,125 @@
+{
+	"name": "ChickenEssenceProduction_CEF",
+	"properties": {
+		"description": "雞精廠產品生產上報紀錄",
+		"linkedServiceName": {
+			"referenceName": "MES_CEF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/雞精廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Barcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProcessItemNo",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LotID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "UnqualifiedQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ManufactureDate",
+				"type": "date"
+			},
+			{
+				"name": "ExpirationDate",
+				"type": "date"
+			},
+			{
+				"name": "StockID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProductionReportType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Editor",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PublishDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ModifiedTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ChickenEssenceProduction"
+		}
+	}
+}

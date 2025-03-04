@@ -1,0 +1,90 @@
+{
+	"name": "ButcherSchedule_ESF",
+	"properties": {
+		"description": "電宰廠排定表",
+		"linkedServiceName": {
+			"referenceName": "MES_ESF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/電宰廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BsID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "ExpectedStartDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ItemNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LineID",
+				"type": "varchar"
+			},
+			{
+				"name": "Farm",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PreventionCode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProductionHistoryAvailable",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Owner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExpectedTotalQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Cars",
+				"type": "nvarchar"
+			},
+			{
+				"name": "InspectionDate",
+				"type": "varchar"
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ButcherSchedule"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "ChickenEssenceMaterialConfig",
+	"properties": {
+		"description": "雞精廠產品設定",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/MES/雞精廠"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mes",
+			"table": "ChickenEssenceMaterialConfig"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "ButcherWorkorder",
+	"properties": {
+		"description": "電宰廠工單",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/MES/電宰廠"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mes",
+			"table": "ButcherWorkorder"
+		}
+	}
+}

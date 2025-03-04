@@ -1,0 +1,80 @@
+{
+	"name": "ChickenEssenceReturnRawMaterial_CEF",
+	"properties": {
+		"description": "雞精廠原料退料上報紀錄",
+		"linkedServiceName": {
+			"referenceName": "MES_CEF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/雞精廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "RID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "ERPWorkorderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPWorkorderNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Barcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LotID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialNo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RawMaterialUnit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ReturnQty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "Editor",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PublishDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LmTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ChickenEssenceReturnRawMaterial"
+		}
+	}
+}

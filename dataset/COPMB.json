@@ -1,0 +1,325 @@
+{
+	"name": "COPMB",
+	"properties": {
+		"description": "客戶商品計價單頭資料檔",
+		"linkedServiceName": {
+			"referenceName": "ERP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ERP"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "COMPANY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATOR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USR_GROUP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATE_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODI_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FLAG",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "CREATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODI_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TRANS_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TRANS_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_mark",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sync_count",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "DataUser",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DataGroup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB001",
+				"type": "nchar"
+			},
+			{
+				"name": "MB002",
+				"type": "nchar"
+			},
+			{
+				"name": "MB003",
+				"type": "nchar"
+			},
+			{
+				"name": "MB004",
+				"type": "nchar"
+			},
+			{
+				"name": "MB005",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB007",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB008",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "MB009",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB010",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB011",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB012",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB013",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB014",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB015",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "MB016",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 4
+			},
+			{
+				"name": "MB017",
+				"type": "nchar"
+			},
+			{
+				"name": "MB018",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB019",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB020",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB021",
+				"type": "decimal",
+				"precision": 15,
+				"scale": 6
+			},
+			{
+				"name": "MB022",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB023",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB024",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB025",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 5
+			},
+			{
+				"name": "MB026",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB027",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MB028",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB029",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB030",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB031",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MB032",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MB033",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "MB034",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "MB035",
+				"type": "decimal",
+				"precision": 11,
+				"scale": 3
+			},
+			{
+				"name": "MB036",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB037",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB038",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB039",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB040",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MB041",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF01",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF02",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF03",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF04",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF05",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDF06",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF07",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF08",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF09",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			},
+			{
+				"name": "UDF10",
+				"type": "decimal",
+				"precision": 21,
+				"scale": 6
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "COPMB"
+		}
+	}
+}
