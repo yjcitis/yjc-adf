@@ -1,0 +1,48 @@
+{
+	"name": "FactoryConfig_PCF",
+	"properties": {
+		"description": "廠別設定 ",
+		"linkedServiceName": {
+			"referenceName": "MES_PCF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MES/加工廠"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "FID",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Version",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPOrderType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ERPLineStockID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BatchPrefix",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FactoryConfig"
+		}
+	}
+}

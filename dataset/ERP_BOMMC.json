@@ -1,0 +1,20 @@
+{
+	"name": "ERP_BOMMC",
+	"properties": {
+		"description": "BOM 用量資料單頭檔\n",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "BOMMC"
+		}
+	}
+}

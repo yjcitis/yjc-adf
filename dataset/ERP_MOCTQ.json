@@ -1,0 +1,20 @@
+{
+	"name": "ERP_MOCTQ",
+	"properties": {
+		"description": "製令聯產品成本分攤比率檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "MOCTQ"
+		}
+	}
+}

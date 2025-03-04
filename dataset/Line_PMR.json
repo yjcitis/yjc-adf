@@ -1,0 +1,83 @@
+{
+	"name": "Line_PMR",
+	"properties": {
+		"description": "線別設定",
+		"linkedServiceName": {
+			"referenceName": "PMR",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "PMR"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "plant",
+				"type": "nvarchar"
+			},
+			{
+				"name": "line",
+				"type": "nvarchar"
+			},
+			{
+				"name": "line_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plant_name",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Line"
+		}
+	}
+}

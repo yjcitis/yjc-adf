@@ -1,0 +1,20 @@
+{
+	"name": "ERP_MOCTB_LOG",
+	"properties": {
+		"description": "製造命令單身檔Log",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "MOCTB_LOG"
+		}
+	}
+}

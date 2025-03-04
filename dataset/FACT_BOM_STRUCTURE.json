@@ -1,0 +1,51 @@
+{
+	"name": "FACT_BOM_STRUCTURE",
+	"properties": {
+		"description": "BOM結構表",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "FACT"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "prod",
+				"type": "varchar"
+			},
+			{
+				"name": "itemp",
+				"type": "varchar"
+			},
+			{
+				"name": "items",
+				"type": "varchar"
+			},
+			{
+				"name": "item_path",
+				"type": "varchar"
+			},
+			{
+				"name": "itemp_level",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "etl_date",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "fact",
+			"table": "fact_bom_structure"
+		}
+	}
+}

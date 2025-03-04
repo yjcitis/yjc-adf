@@ -1,0 +1,20 @@
+{
+	"name": "ERP_CMSMA",
+	"properties": {
+		"description": "進銷存參數設定作業",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "CMSMA"
+		}
+	}
+}

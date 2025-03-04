@@ -1,0 +1,20 @@
+{
+	"name": "ERP_MOCTD",
+	"properties": {
+		"description": "領/退料製令資料檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "MOCTD"
+		}
+	}
+}

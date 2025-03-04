@@ -1,0 +1,20 @@
+{
+	"name": "ERP_PURTC",
+	"properties": {
+		"description": "採購單單頭資料檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "PURTC"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "ERP_CMSNB",
+	"properties": {
+		"description": "專案代號檔\n",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "CMSNB"
+		}
+	}
+}

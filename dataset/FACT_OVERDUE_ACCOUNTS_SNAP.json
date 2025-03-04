@@ -1,0 +1,82 @@
+{
+	"name": "FACT_OVERDUE_ACCOUNTS_SNAP",
+	"properties": {
+		"description": "逾期帳款彙總快照表",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "FACT"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "snap_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "category",
+				"type": "varchar"
+			},
+			{
+				"name": "COMPANY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plan_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "plan_mon",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "cust",
+				"type": "nvarchar"
+			},
+			{
+				"name": "sales",
+				"type": "nvarchar"
+			},
+			{
+				"name": "amt_plan",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "tax",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "amt_real",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "amt_final",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
+			},
+			{
+				"name": "etl_date",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "fact",
+			"table": "fact_overdue_accounts_snap"
+		}
+	}
+}

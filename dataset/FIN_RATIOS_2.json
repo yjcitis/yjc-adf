@@ -1,0 +1,29 @@
+{
+	"name": "FIN_RATIOS_2",
+	"properties": {
+		"description": "財務比率基本表二",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "fin_ratios_id_2",
+				"type": "nchar"
+			},
+			{
+				"name": "fin_ratios_name_2",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "fin_ratios_2"
+		}
+	}
+}

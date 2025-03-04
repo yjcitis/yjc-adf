@@ -1,0 +1,20 @@
+{
+	"name": "ERP_NOTTD",
+	"properties": {
+		"description": "應收票據單身檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "NOTTD"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "ERP_CSTME",
+	"properties": {
+		"description": "產品成本檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "CSTME"
+		}
+	}
+}

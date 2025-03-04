@@ -1,0 +1,20 @@
+{
+	"name": "FactoryConfig",
+	"properties": {
+		"description": "廠別設定 ",
+		"linkedServiceName": {
+			"referenceName": "DW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/MES/共用"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mes",
+			"table": "FactoryConfig"
+		}
+	}
+}

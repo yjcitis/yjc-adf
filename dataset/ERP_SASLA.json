@@ -1,0 +1,20 @@
+{
+	"name": "ERP_SASLA",
+	"properties": {
+		"description": "銷售資料匯總檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "SASLA"
+		}
+	}
+}

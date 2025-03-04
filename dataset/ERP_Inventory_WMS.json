@@ -1,0 +1,151 @@
+{
+	"name": "ERP_Inventory_WMS",
+	"properties": {
+		"description": "ERP現有庫存",
+		"linkedServiceName": {
+			"referenceName": "WMS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "WMS"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "user_group",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "creator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modifier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_create_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_modi_time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "version",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "is_hide",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mtrl_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "erp_lot_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "lot_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 3
+			},
+			{
+				"name": "carrier_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "unit",
+				"type": "nvarchar"
+			},
+			{
+				"name": "in_box_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "exp_date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "storage_conditions",
+				"type": "nvarchar"
+			},
+			{
+				"name": "plan_tag_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "print_tag_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "done_tag_qty",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "stock_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "spec",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_id",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ERP_Inventory"
+		}
+	}
+}

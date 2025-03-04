@@ -1,0 +1,42 @@
+{
+	"name": "FACTORY_EXPECTED_VALUE",
+	"properties": {
+		"description": "廠別預計產值檔",
+		"linkedServiceName": {
+			"referenceName": "BI",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BI"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "factory_code",
+				"type": "nchar"
+			},
+			{
+				"name": "year",
+				"type": "nchar"
+			},
+			{
+				"name": "month",
+				"type": "nchar"
+			},
+			{
+				"name": "day",
+				"type": "nchar"
+			},
+			{
+				"name": "value",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "factory_expected_value"
+		}
+	}
+}

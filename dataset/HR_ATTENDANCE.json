@@ -1,0 +1,20 @@
+{
+	"name": "HR_ATTENDANCE",
+	"properties": {
+		"description": "HR每日打卡記錄",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/HR"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "hr",
+			"table": "ATTENDANCE"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "ERP_INVLB",
+	"properties": {
+		"description": "品號每月統計單頭\n",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "INVLB"
+		}
+	}
+}

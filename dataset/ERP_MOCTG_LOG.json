@@ -1,0 +1,20 @@
+{
+	"name": "ERP_MOCTG_LOG",
+	"properties": {
+		"description": "生產入庫單身檔Log",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "MOCTG_LOG"
+		}
+	}
+}

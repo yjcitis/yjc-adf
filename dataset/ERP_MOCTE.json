@@ -1,0 +1,20 @@
+{
+	"name": "ERP_MOCTE",
+	"properties": {
+		"description": "領/退料單身檔",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "MOCTE"
+		}
+	}
+}

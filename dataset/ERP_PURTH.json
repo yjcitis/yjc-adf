@@ -1,0 +1,20 @@
+{
+	"name": "ERP_PURTH",
+	"properties": {
+		"description": "進貨單單身檔\n",
+		"linkedServiceName": {
+			"referenceName": "CloudDW",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ODS/ERP"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "erp",
+			"table": "PURTH"
+		}
+	}
+}
