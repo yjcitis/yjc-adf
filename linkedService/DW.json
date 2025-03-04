@@ -1,0 +1,12 @@
+{
+	"name": "DW",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=yjc-sqldb.database.windows.net;initial catalog=yjc-control-tower;user id=sysadmin",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5MDEyNDBiOS04YTZjLTQxMzMtOTkzZC02YTQxNWYwY2ExNjMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		}
+	}
+}

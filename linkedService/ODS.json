@@ -1,0 +1,17 @@
+{
+	"name": "ODS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "ODS DB",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=192.168.0.22;initial catalog=yjc001;user id=PWCBI",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI3MWRhMmEzMi1kMmY4LTQwNTEtOGY5Yy04ZGEzZDZkZWQ3ZWUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "YJC2",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

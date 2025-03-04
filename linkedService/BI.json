@@ -1,0 +1,17 @@
+{
+	"name": "BI",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "元進莊原有BI資料庫",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=192.168.0.22;initial catalog=BI;user id=PWCBI",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzZjQ3OTQ2NS1hZmVhLTQ1YWUtYmNiNS1hMWQwYWUzNGM3MzQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "YJC2",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

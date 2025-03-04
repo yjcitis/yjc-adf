@@ -1,0 +1,17 @@
+{
+	"name": "MES_ESF",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "電宰廠MES",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=192.168.0.16;initial catalog=PWCMESESF;user id=PWCBI",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwNDg1ODk5OC04YmYwLTQzYzUtOWEyZi0wODVhYjMzZGVjZWUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "YJC2",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "MES_BIF",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "配料廠",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=192.168.0.16;initial catalog=PWCMESBIF;user id=PWCBI",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjY2Q5OTJlNS0xYzU4LTQ4MjYtYjY0NC03OGU1ZTEyOTA1ZjciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "YJC2",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

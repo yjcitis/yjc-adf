@@ -1,0 +1,16 @@
+{
+	"name": "HR",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=192.168.0.6;initial catalog=EZ9;user id=PWCBI",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1OTY2YTdmYi1mZDVhLTQ4ZjAtYWVjMi1jY2EyMzAyMGM1NTQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "YJC2",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

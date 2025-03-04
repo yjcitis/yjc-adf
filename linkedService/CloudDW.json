@@ -1,0 +1,13 @@
+{
+	"name": "CloudDW",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "雲端處理資料寫入雲端資料庫",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=yjc-sqldb.database.windows.net;initial catalog=yjc-control-tower;user id=sysadmin",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQyRkVDNzczLTJDNzMtNDIwNi04RjIzLUI4QURCMzU0RkYwMV80ZjU0MzE0Zi0xZDhjLTQ1NWEtOTFjYi0yNjBlMTZkOWJlMTkiDQp9"
+		}
+	}
+}

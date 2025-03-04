@@ -1,0 +1,17 @@
+{
+	"name": "ERP",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "ERP DB",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=192.168.0.22;initial catalog=yjc002;user id=PWCBI",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4N2E4ZDhkMy04ZTc3LTQ3ODYtOTBiNy1mNDYwNzM1NzIwMTgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "YJC2",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
