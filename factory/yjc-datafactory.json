@@ -1,0 +1,20 @@
+{
+	"name": "yjc-datafactory",
+	"properties": {
+		"globalParameters": {
+			"receiver": {
+				"type": "string",
+				"value": "kyle.c.chang@pwc.com"
+			}
+		},
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cf77517f-c5ae-4055-9f21-f4a2338f91d6",
+		"tenantId": "6f9264f5-9539-404e-af31-7a1e1ab0f9aa"
+	}
+}
